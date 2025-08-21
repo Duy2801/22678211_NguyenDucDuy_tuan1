@@ -2,6 +2,7 @@ import { Person } from "./bai1";
 import { Student } from './bai2';
 import { Car } from './bai3';
 import { Rectangle } from './bai4';
+import { BankAccount } from './bai5';
 
 var person = new Person('Duy',22)
 person.displayInfo();
@@ -17,3 +18,12 @@ const rect1 = new Rectangle(5, 10);
 
 console.log("Area:", rect1.getArea());          
 console.log("Perimeter:", rect1.getPerimeter()); 
+
+
+
+const myAccount = new BankAccount(1000); 
+
+myAccount.deposit(500);     
+myAccount.withdraw(200);    
+myAccount.withdraw(2000);    
+myAccount.showBalance();  
