@@ -196,3 +196,22 @@ const userRepo = new Repository<User>();
 userRepo.add({ id: 1, name: "Alice" });
 userRepo.add({ id: 2, name: "Bob" });
 console.log("Users:", userRepo.getAll());
+
+//  22
+import { Stack } from "./bai22";
+
+const stack = new Stack<number>();
+
+console.log("Is empty?", stack.isEmpty()); 
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log("Peek:", stack.peek()); 
+
+console.log("Pop:", stack.pop());   
+console.log("Peek:", stack.peek()); 
+
+console.log("Is empty?", stack.isEmpty()); 
+

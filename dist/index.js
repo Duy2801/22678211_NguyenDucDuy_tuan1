@@ -149,3 +149,14 @@ const userRepo = new bai21_1.Repository();
 userRepo.add({ id: 1, name: "Alice" });
 userRepo.add({ id: 2, name: "Bob" });
 console.log("Users:", userRepo.getAll());
+//  22
+const bai22_1 = require("./bai22");
+const stack = new bai22_1.Stack();
+console.log("Is empty?", stack.isEmpty());
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log("Peek:", stack.peek());
+console.log("Pop:", stack.pop());
+console.log("Peek:", stack.peek());
+console.log("Is empty?", stack.isEmpty());
