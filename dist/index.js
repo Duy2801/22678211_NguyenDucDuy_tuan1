@@ -12,6 +12,7 @@ const bai8_1 = require("./bai8");
 const bai9_1 = require("./bai9");
 const bai11_1 = require("./bai11");
 const bai12_1 = require("./bai12");
+const bai13_1 = require("./bai13");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
@@ -62,3 +63,6 @@ const bird = new bai12_1.Bird("Eagle");
 bird.fly();
 const fish = new bai12_1.Fish("Goldfish");
 fish.swim();
+//bai 14
+const shapes = [new bai13_1.Square(4), new bai13_1.Circle(3)];
+shapes.forEach((s) => console.log("Area:", s.area()));
