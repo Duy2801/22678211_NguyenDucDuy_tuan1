@@ -17,6 +17,7 @@ const bai14_1 = require("./bai14");
 const Book_1 = require("./bai15/Book");
 const User_1 = require("./bai15/User");
 const Library_1 = require("./bai15/Library");
+const bai18_1 = require("./bai18");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
@@ -113,3 +114,8 @@ const logger2 = bai17_1.Logger.getInstance();
 logger1.log("First message");
 logger2.log("Second message");
 console.log("Same instance?", logger1 === logger2);
+//18
+console.log("Add:", bai18_1.MathUtil.add(10, 5));
+console.log("Subtract:", bai18_1.MathUtil.subtract(10, 5));
+console.log("Multiply:", bai18_1.MathUtil.multiply(10, 5));
+console.log("Divide:", bai18_1.MathUtil.divide(10, 5));

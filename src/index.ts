@@ -15,6 +15,8 @@ import { Manager, Developer } from "./bai14";
 import { Book15 } from "./bai15/Book";
 import { User15 } from "./bai15/User";
 import { Library } from "./bai15/Library";
+
+import { MathUtil } from "./bai18";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -143,3 +145,10 @@ logger1.log("First message");
 logger2.log("Second message");
 
 console.log("Same instance?", logger1 === logger2);
+
+//18
+
+console.log("Add:", MathUtil.add(10, 5));
+console.log("Subtract:", MathUtil.subtract(10, 5));
+console.log("Multiply:", MathUtil.multiply(10, 5));
+console.log("Divide:", MathUtil.divide(10, 5));
