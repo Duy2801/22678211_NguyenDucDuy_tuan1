@@ -12,7 +12,7 @@ const bai8_1 = require("./bai8");
 // import { Animal, Dog, Cat } from "./bai9";
 const bai11_1 = require("./bai11");
 const bai12_1 = require("./bai12");
-const bai13_1 = require("./bai13");
+// import { Shape, Square, Circle } from "./bai13";
 const bai14_1 = require("./bai14");
 const Book_1 = require("./bai15/Book");
 const User_1 = require("./bai15/User");
@@ -71,8 +71,8 @@ bird.fly();
 const fish = new bai12_1.Fish("Goldfish");
 fish.swim();
 //bai 13
-const shapes = [new bai13_1.Square(4), new bai13_1.Circle(3)];
-shapes.forEach((s) => console.log("Area:", s.area()));
+// const shapes: Shape[] = [new Square(4), new Circle(3)];
+// shapes.forEach((s) => console.log("Area:", s.area()));
 //bai 14
 const m = new bai14_1.Manager("Alice", 5000);
 m.work();
@@ -168,3 +168,11 @@ const payments = [
     new CardPayment_1.CardPayment("1234-5678-9012-3456"),
 ];
 payments.forEach((p) => p.pay(100));
+// 24
+const Fan_1 = require("./bai24/Fan");
+const AirConditioner_1 = require("./bai24/AirConditioner");
+const appliances = [new Fan_1.Fan(), new AirConditioner_1.AirConditioner()];
+appliances.forEach((a) => a.turnOn());
+//25
+const bai25_1 = require("./bai25");
+bai25_1.Shape.describe();

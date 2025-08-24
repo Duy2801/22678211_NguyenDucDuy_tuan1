@@ -10,7 +10,7 @@ import { Product } from "./bai8";
 // import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
 import { Bird, Fish } from "./bai12";
-import { Shape, Square, Circle } from "./bai13";
+// import { Shape, Square, Circle } from "./bai13";
 import { Manager, Developer } from "./bai14";
 import { Book15 } from "./bai15/Book";
 import { User15 } from "./bai15/User";
@@ -86,9 +86,9 @@ bird.fly();
 const fish = new Fish("Goldfish");
 fish.swim();
 //bai 13
-const shapes: Shape[] = [new Square(4), new Circle(3)];
+// const shapes: Shape[] = [new Square(4), new Circle(3)];
 
-shapes.forEach((s) => console.log("Area:", s.area()));
+// shapes.forEach((s) => console.log("Area:", s.area()));
 //bai 14
 
 const m = new Manager("Alice", 5000);
@@ -224,3 +224,15 @@ const payments: Payment[] = [
 ];
 
 payments.forEach((p) => p.pay(100));
+// 24
+import { Fan } from "./bai24/Fan";
+import { AirConditioner } from "./bai24/AirConditioner";
+import { Appliance } from "./bai24/Appliance";
+
+const appliances: Appliance[] = [new Fan(), new AirConditioner()];
+
+appliances.forEach((a) => a.turnOn());
+
+//25
+import { Shape } from "./bai25";
+Shape.describe();
