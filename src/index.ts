@@ -169,16 +169,16 @@ console.log("Divide:", MathUtil.divide(10, 5));
 // animals.forEach((a) => a.makeSound());
 // 20
 
-import { Car } from "./bai20/Car";
-import { Bike } from "./bai20/Bike";
-import { Vehicle } from "./bai20/Vehicle";
+// import { Car } from "./bai20/Car";
+// import { Bike } from "./bai20/Bike";
+// import { Vehicle } from "./bai20/Vehicle";
 
-const vehicles: Vehicle[] = [new Car("Toyota", 120), new Bike("Yamaha", 80)];
+// const vehicles: Vehicle[] = [new Car("Toyota", 120), new Bike("Yamaha", 80)];
 
-vehicles.forEach((v) => {
-  v.drive();
-  v.stop();
-});
+// vehicles.forEach((v) => {
+//   v.drive();
+//   v.stop();
+// });
 // 21
 import { Repository } from "./bai21";
 
@@ -259,7 +259,16 @@ import { Dog } from "./bai28/Dog";
 import { Cat } from "./bai28/Cat";
 
 const dog = new Dog();
-dog.speak(); 
+dog.speak();
 
 const cat = new Cat();
-cat.speak(); 
+cat.speak();
+// 29
+import { Car } from "./bai29/Car";
+import { Robot } from "./bai29/Robot";
+
+const car = new Car();
+const robot = new Robot();
+
+car.move();
+robot.move();

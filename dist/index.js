@@ -127,13 +127,14 @@ console.log("Divide:", bai18_1.MathUtil.divide(10, 5));
 // ];
 // animals.forEach((a) => a.makeSound());
 // 20
-const Car_1 = require("./bai20/Car");
-const Bike_1 = require("./bai20/Bike");
-const vehicles = [new Car_1.Car("Toyota", 120), new Bike_1.Bike("Yamaha", 80)];
-vehicles.forEach((v) => {
-    v.drive();
-    v.stop();
-});
+// import { Car } from "./bai20/Car";
+// import { Bike } from "./bai20/Bike";
+// import { Vehicle } from "./bai20/Vehicle";
+// const vehicles: Vehicle[] = [new Car("Toyota", 120), new Bike("Yamaha", 80)];
+// vehicles.forEach((v) => {
+//   v.drive();
+//   v.stop();
+// });
 // 21
 const bai21_1 = require("./bai21");
 const numberRepo = new bai21_1.Repository();
@@ -192,3 +193,10 @@ const dog = new Dog_1.Dog();
 dog.speak();
 const cat = new Cat_1.Cat();
 cat.speak();
+// 29
+const Car_1 = require("./bai29/Car");
+const Robot_1 = require("./bai29/Robot");
+const car = new Car_1.Car();
+const robot = new Robot_1.Robot();
+car.move();
+robot.move();
