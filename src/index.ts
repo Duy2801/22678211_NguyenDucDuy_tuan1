@@ -1,4 +1,5 @@
 import { Person } from "./bai1";
+import { Account } from "./bai10";
 import { Student } from "./bai2";
 import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
@@ -50,3 +51,11 @@ expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 
 animals.forEach((a) => a.sound());
+// bai 10
+const acc = new Account("Duy", 500, "ACC123");
+console.log(acc.owner);
+console.log(acc.accountNumber);
+console.log(acc.getBalance());
+
+acc.deposit(200);
+console.log(acc.getBalance());

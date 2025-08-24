@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = require("./bai1");
+const bai10_1 = require("./bai10");
 const bai2_1 = require("./bai2");
 const bai3_1 = require("./bai3");
 const bai4_1 = require("./bai4");
@@ -40,3 +41,10 @@ expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 // bai9
 const animals = [new bai9_1.Dog("Buddy"), new bai9_1.Cat("Kitty")];
 animals.forEach((a) => a.sound());
+// bai 10
+const acc = new bai10_1.Account("Duy", 500, "ACC123");
+console.log(acc.owner);
+console.log(acc.accountNumber);
+console.log(acc.getBalance());
+acc.deposit(200);
+console.log(acc.getBalance());
