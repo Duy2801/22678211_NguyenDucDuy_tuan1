@@ -1,7 +1,7 @@
 import { Person } from "./bai1";
 import { Account } from "./bai10";
 import { Student } from "./bai2";
-import { Car } from "./bai3";
+// import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
@@ -23,8 +23,8 @@ person.displayInfo();
 const student1 = new Student("Duy", 22, "A");
 student1.displayAllInfo();
 
-const car1 = new Car("Toyota", "Camry", 2022);
-car1.showInfo();
+// const car1 = new Car("Toyota", "Camry", 2022);
+// car1.showInfo();
 
 const rect1 = new Rectangle(5, 10);
 
@@ -162,3 +162,15 @@ const animals: Animal[] = [
 ];
 
 animals.forEach((a) => a.makeSound());
+// 20
+
+import { Car } from "./bai20/Car";
+import { Bike } from "./bai20/Bike";
+import { Vehicle } from "./bai20/Vehicle";
+
+const vehicles: Vehicle[] = [new Car("Toyota", 120), new Bike("Yamaha", 80)];
+
+vehicles.forEach((v) => {
+  v.drive();
+  v.stop();
+});

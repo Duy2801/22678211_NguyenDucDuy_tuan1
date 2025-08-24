@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Car = void 0;
+class Car {
+    constructor(brand, speed) {
+        this.brand = brand;
+        this.speed = speed;
+    }
+    drive() {
+        console.log(`${this.brand} car is driving at ${this.speed} km/h.`);
+    }
+    stop() {
+        console.log(`${this.brand} car has stopped.`);
+    }
+}
+exports.Car = Car;

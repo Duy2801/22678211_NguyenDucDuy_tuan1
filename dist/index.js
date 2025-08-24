@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const bai1_1 = require("./bai1");
 const bai10_1 = require("./bai10");
 const bai2_1 = require("./bai2");
-const bai3_1 = require("./bai3");
+// import { Car } from "./bai3";
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
@@ -22,8 +22,8 @@ var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
 student1.displayAllInfo();
-const car1 = new bai3_1.Car("Toyota", "Camry", 2022);
-car1.showInfo();
+// const car1 = new Car("Toyota", "Camry", 2022);
+// car1.showInfo();
 const rect1 = new bai4_1.Rectangle(5, 10);
 console.log("Area:", rect1.getArea());
 console.log("Perimeter:", rect1.getPerimeter());
@@ -127,3 +127,11 @@ const animals = [
     new bai19_1.Animal("GenericAnimal"),
 ];
 animals.forEach((a) => a.makeSound());
+// 20
+const Car_1 = require("./bai20/Car");
+const Bike_1 = require("./bai20/Bike");
+const vehicles = [new Car_1.Car("Toyota", 120), new Bike_1.Bike("Yamaha", 80)];
+vehicles.forEach((v) => {
+    v.drive();
+    v.stop();
+});
