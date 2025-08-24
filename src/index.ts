@@ -9,6 +9,7 @@ import { User } from "./bai7";
 import { Product } from "./bai8";
 import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
+import { Bird, Fish } from "./bai12";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -68,3 +69,9 @@ dog.bark();
 const cat = new Cat11("Kitty");
 cat.move();
 cat.meow();
+// bai 12
+const bird = new Bird("Eagle");
+bird.fly();
+
+const fish = new Fish("Goldfish");
+fish.swim();

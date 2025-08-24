@@ -11,6 +11,7 @@ const bai7_1 = require("./bai7");
 const bai8_1 = require("./bai8");
 const bai9_1 = require("./bai9");
 const bai11_1 = require("./bai11");
+const bai12_1 = require("./bai12");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
@@ -56,3 +57,8 @@ dog.bark();
 const cat = new bai11_1.Cat11("Kitty");
 cat.move();
 cat.meow();
+// bai 12
+const bird = new bai12_1.Bird("Eagle");
+bird.fly();
+const fish = new bai12_1.Fish("Goldfish");
+fish.swim();
