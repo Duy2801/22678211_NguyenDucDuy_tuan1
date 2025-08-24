@@ -7,7 +7,7 @@ const bai2_1 = require("./bai2");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
-const bai7_1 = require("./bai7");
+// import { User } from "./bai7";
 const bai8_1 = require("./bai8");
 // import { Animal, Dog, Cat } from "./bai9";
 const bai11_1 = require("./bai11");
@@ -34,8 +34,8 @@ myAccount.withdraw(2000);
 myAccount.showBalance();
 const book = new bai6_1.Book("5 anh em sieu nhan", "hung", 2021);
 book.showBook();
-const user = new bai7_1.User("Duy");
-console.log(user.name);
+// const user = new User("Duy");
+// console.log(user.name);
 const products = [
     new bai8_1.Product("Book", 50),
     new bai8_1.Product("Laptop", 1200),
@@ -135,3 +135,17 @@ vehicles.forEach((v) => {
     v.drive();
     v.stop();
 });
+// 21
+const bai21_1 = require("./bai21");
+const numberRepo = new bai21_1.Repository();
+numberRepo.add(10);
+numberRepo.add(20);
+console.log("Numbers:", numberRepo.getAll());
+const stringRepo = new bai21_1.Repository();
+stringRepo.add("Hello");
+stringRepo.add("World");
+console.log("Strings:", stringRepo.getAll());
+const userRepo = new bai21_1.Repository();
+userRepo.add({ id: 1, name: "Alice" });
+userRepo.add({ id: 2, name: "Bob" });
+console.log("Users:", userRepo.getAll());

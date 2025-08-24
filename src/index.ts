@@ -5,7 +5,7 @@ import { Student } from "./bai2";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
-import { User } from "./bai7";
+// import { User } from "./bai7";
 import { Product } from "./bai8";
 // import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
@@ -41,8 +41,8 @@ myAccount.showBalance();
 const book = new Book("5 anh em sieu nhan", "hung", 2021);
 book.showBook();
 
-const user = new User("Duy");
-console.log(user.name);
+// const user = new User("Duy");
+// console.log(user.name);
 
 const products: Product[] = [
   new Product("Book", 50),
@@ -174,3 +174,25 @@ vehicles.forEach((v) => {
   v.drive();
   v.stop();
 });
+// 21
+import { Repository } from "./bai21";
+
+const numberRepo = new Repository<number>();
+numberRepo.add(10);
+numberRepo.add(20);
+console.log("Numbers:", numberRepo.getAll());
+
+const stringRepo = new Repository<string>();
+stringRepo.add("Hello");
+stringRepo.add("World");
+console.log("Strings:", stringRepo.getAll());
+
+interface User {
+  id: number;
+  name: string;
+}
+
+const userRepo = new Repository<User>();
+userRepo.add({ id: 1, name: "Alice" });
+userRepo.add({ id: 2, name: "Bob" });
+console.log("Users:", userRepo.getAll());
