@@ -11,6 +11,7 @@ import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
 import { Bird, Fish } from "./bai12";
 import { Shape, Square, Circle } from "./bai13";
+import { Manager, Developer } from "./bai14";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -80,3 +81,12 @@ fish.swim();
 const shapes: Shape[] = [new Square(4), new Circle(3)];
 
 shapes.forEach((s) => console.log("Area:", s.area()));
+//bai 14
+
+const m = new Manager("Alice", 5000);
+m.work();
+m.manage();
+
+const d = new Developer("Bob", 4000);
+d.work();
+d.code();
