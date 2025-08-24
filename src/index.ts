@@ -12,6 +12,9 @@ import { Dog11, Cat11 } from "./bai11";
 import { Bird, Fish } from "./bai12";
 import { Shape, Square, Circle } from "./bai13";
 import { Manager, Developer } from "./bai14";
+import { Book15 } from "./bai15/Book";
+import { User15 } from "./bai15/User";
+import { Library } from "./bai15/Library";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -90,3 +93,22 @@ m.manage();
 const d = new Developer("Bob", 4000);
 d.work();
 d.code();
+// bai 15
+
+
+const library = new Library();
+
+const book1 = new Book15("Clean Code", "Robert C. Martin");
+const book2 = new Book15("Design Patterns", "GoF");
+
+const user1 = new User15("Duy");
+const user2 = new User15("Alice");
+
+library.addBook(book1);
+library.addBook(book2);
+
+library.addUser(user1);
+library.addUser(user2);
+
+library.listBooks();
+library.listUsers();
