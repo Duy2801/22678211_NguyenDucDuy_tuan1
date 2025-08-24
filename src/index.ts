@@ -1,6 +1,6 @@
 import { Person } from "./bai1";
 import { Account } from "./bai10";
-import { Student } from "./bai2";
+// import { Student } from "./bai2";
 // import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
@@ -23,8 +23,8 @@ import { MathUtil } from "./bai18";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
-const student1 = new Student("Duy", 22, "A");
-student1.displayAllInfo();
+// const student1 = new Student("Duy", 22, "A");
+// student1.displayAllInfo();
 
 // const car1 = new Car("Toyota", "Camry", 2022);
 // car1.showInfo();
@@ -250,10 +250,10 @@ order.addProduct(new Product("Keyboard", 75));
 
 console.log("Total price:", order.calculateTotal());
 // 27
-import { Teacher } from "./bai27/Teacher";
+// import { Teacher } from "./bai27/Teacher";
 
-const teacher = new Teacher("Alice", 35, "Mathematics");
-teacher.introduce();
+// const teacher = new Teacher("Alice", 35, "Mathematics");
+// teacher.introduce();
 // 28
 import { Dog } from "./bai28/Dog";
 import { Cat } from "./bai28/Cat";
@@ -272,3 +272,24 @@ const robot = new Robot();
 
 car.move();
 robot.move();
+
+// 30
+import { School } from "./bai30/School";
+import { Student } from "./bai30/Student";
+import { Teacher } from "./bai30/Teacher";
+
+const school = new School();
+
+const teacher1 = new Teacher("Alice", 35, "Math");
+const teacher2 = new Teacher("Bob", 40, "Physics");
+
+const student1 = new Student("Charlie", 15, "10th");
+const student2 = new Student("Daisy", 16, "11th");
+
+school.addTeacher(teacher1);
+school.addTeacher(teacher2);
+
+school.addStudent(student1);
+school.addStudent(student2);
+
+school.displayInfo();
