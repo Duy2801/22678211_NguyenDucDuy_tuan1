@@ -4,7 +4,7 @@ import { Car } from "./bai3";
 import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
-
+import { User } from "./bai7";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -28,3 +28,6 @@ myAccount.showBalance();
 
 const book = new Book("5 anh em sieu nhan", "hung", 2021);
 book.showBook();
+
+const user = new User("Duy");
+console.log(user.name);
