@@ -74,13 +74,13 @@ console.log(acc.getBalance());
 acc.deposit(200);
 console.log(acc.getBalance());
 // bai 11
-const dog = new Dog11("Buddy");
-dog.move();
-dog.bark();
+// const dog = new Dog11("Buddy");
+// dog.move();
+// dog.bark();
 
-const cat = new Cat11("Kitty");
-cat.move();
-cat.meow();
+// const cat = new Cat11("Kitty");
+// cat.move();
+// cat.meow();
 // bai 12
 const bird = new Bird("Eagle");
 bird.fly();
@@ -158,15 +158,15 @@ console.log("Subtract:", MathUtil.subtract(10, 5));
 console.log("Multiply:", MathUtil.multiply(10, 5));
 console.log("Divide:", MathUtil.divide(10, 5));
 // 19
-import { Animal, Dog, Cat } from "./bai19";
+// import { Animal, Dog, Cat } from "./bai19";
 
-const animals: Animal[] = [
-  new Dog("Buddy"),
-  new Cat("Kitty"),
-  new Animal("GenericAnimal"),
-];
+// const animals: Animal[] = [
+//   new Dog("Buddy"),
+//   new Cat("Kitty"),
+//   new Animal("GenericAnimal"),
+// ];
 
-animals.forEach((a) => a.makeSound());
+// animals.forEach((a) => a.makeSound());
 // 20
 
 import { Car } from "./bai20/Car";
@@ -254,3 +254,12 @@ import { Teacher } from "./bai27/Teacher";
 
 const teacher = new Teacher("Alice", 35, "Mathematics");
 teacher.introduce();
+// 28
+import { Dog } from "./bai28/Dog";
+import { Cat } from "./bai28/Cat";
+
+const dog = new Dog();
+dog.speak(); 
+
+const cat = new Cat();
+cat.speak(); 

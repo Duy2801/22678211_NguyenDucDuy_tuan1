@@ -7,10 +7,6 @@ const bai2_1 = require("./bai2");
 const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
-// import { User } from "./bai7";
-// import { Product } from "./bai8";
-// import { Animal, Dog, Cat } from "./bai9";
-const bai11_1 = require("./bai11");
 const bai12_1 = require("./bai12");
 // import { Shape, Square, Circle } from "./bai13";
 const bai14_1 = require("./bai14");
@@ -60,12 +56,12 @@ console.log(acc.getBalance());
 acc.deposit(200);
 console.log(acc.getBalance());
 // bai 11
-const dog = new bai11_1.Dog11("Buddy");
-dog.move();
-dog.bark();
-const cat = new bai11_1.Cat11("Kitty");
-cat.move();
-cat.meow();
+// const dog = new Dog11("Buddy");
+// dog.move();
+// dog.bark();
+// const cat = new Cat11("Kitty");
+// cat.move();
+// cat.meow();
 // bai 12
 const bird = new bai12_1.Bird("Eagle");
 bird.fly();
@@ -123,13 +119,13 @@ console.log("Subtract:", bai18_1.MathUtil.subtract(10, 5));
 console.log("Multiply:", bai18_1.MathUtil.multiply(10, 5));
 console.log("Divide:", bai18_1.MathUtil.divide(10, 5));
 // 19
-const bai19_1 = require("./bai19");
-const animals = [
-    new bai19_1.Dog("Buddy"),
-    new bai19_1.Cat("Kitty"),
-    new bai19_1.Animal("GenericAnimal"),
-];
-animals.forEach((a) => a.makeSound());
+// import { Animal, Dog, Cat } from "./bai19";
+// const animals: Animal[] = [
+//   new Dog("Buddy"),
+//   new Cat("Kitty"),
+//   new Animal("GenericAnimal"),
+// ];
+// animals.forEach((a) => a.makeSound());
 // 20
 const Car_1 = require("./bai20/Car");
 const Bike_1 = require("./bai20/Bike");
@@ -189,3 +185,10 @@ console.log("Total price:", order.calculateTotal());
 const Teacher_1 = require("./bai27/Teacher");
 const teacher = new Teacher_1.Teacher("Alice", 35, "Mathematics");
 teacher.introduce();
+// 28
+const Dog_1 = require("./bai28/Dog");
+const Cat_1 = require("./bai28/Cat");
+const dog = new Dog_1.Dog();
+dog.speak();
+const cat = new Cat_1.Cat();
+cat.speak();
