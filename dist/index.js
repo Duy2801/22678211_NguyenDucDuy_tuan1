@@ -8,7 +8,7 @@ const bai4_1 = require("./bai4");
 const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
 // import { User } from "./bai7";
-const bai8_1 = require("./bai8");
+// import { Product } from "./bai8";
 // import { Animal, Dog, Cat } from "./bai9";
 const bai11_1 = require("./bai11");
 const bai12_1 = require("./bai12");
@@ -36,18 +36,19 @@ myAccount.withdraw(2000);
 myAccount.showBalance();
 const book = new bai6_1.Book("5 anh em sieu nhan", "hung", 2021);
 book.showBook();
+//bai 8
 // const user = new User("Duy");
 // console.log(user.name);
-const products = [
-    new bai8_1.Product("Book", 50),
-    new bai8_1.Product("Laptop", 1200),
-    new bai8_1.Product("Phone", 800),
-    new bai8_1.Product("Pen", 20),
-    new bai8_1.Product("Headphones", 150),
-];
-const expensiveProducts = products.filter((p) => p.price > 100);
-console.log("Products with price > 100:");
-expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
+// const products: Product[] = [
+//   new Product("Book", 50),
+//   new Product("Laptop", 1200),
+//   new Product("Phone", 800),
+//   new Product("Pen", 20),
+//   new Product("Headphones", 150),
+// ];
+// const expensiveProducts = products.filter((p) => p.price > 100);
+// console.log("Products with price > 100:");
+// expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 // bai9
 // const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 // animals.forEach((a) => a.sound());
@@ -176,3 +177,11 @@ appliances.forEach((a) => a.turnOn());
 //25
 const bai25_1 = require("./bai25");
 bai25_1.Shape.describe();
+// 26
+const Product_1 = require("./bai26/Product");
+const Order_1 = require("./bai26/Order");
+const order = new Order_1.Order();
+order.addProduct(new Product_1.Product("Laptop", 1200));
+order.addProduct(new Product_1.Product("Mouse", 25));
+order.addProduct(new Product_1.Product("Keyboard", 75));
+console.log("Total price:", order.calculateTotal());

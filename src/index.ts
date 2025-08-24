@@ -6,7 +6,7 @@ import { Rectangle } from "./bai4";
 import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
 // import { User } from "./bai7";
-import { Product } from "./bai8";
+// import { Product } from "./bai8";
 // import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
 import { Bird, Fish } from "./bai12";
@@ -44,21 +44,23 @@ myAccount.showBalance();
 const book = new Book("5 anh em sieu nhan", "hung", 2021);
 book.showBook();
 
+//bai 8
+
 // const user = new User("Duy");
 // console.log(user.name);
 
-const products: Product[] = [
-  new Product("Book", 50),
-  new Product("Laptop", 1200),
-  new Product("Phone", 800),
-  new Product("Pen", 20),
-  new Product("Headphones", 150),
-];
+// const products: Product[] = [
+//   new Product("Book", 50),
+//   new Product("Laptop", 1200),
+//   new Product("Phone", 800),
+//   new Product("Pen", 20),
+//   new Product("Headphones", 150),
+// ];
 
-const expensiveProducts = products.filter((p) => p.price > 100);
+// const expensiveProducts = products.filter((p) => p.price > 100);
 
-console.log("Products with price > 100:");
-expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
+// console.log("Products with price > 100:");
+// expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 // bai9
 // const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 
@@ -236,3 +238,14 @@ appliances.forEach((a) => a.turnOn());
 //25
 import { Shape } from "./bai25";
 Shape.describe();
+// 26
+import { Product } from "./bai26/Product";
+import { Order } from "./bai26/Order";
+
+const order = new Order();
+
+order.addProduct(new Product("Laptop", 1200));
+order.addProduct(new Product("Mouse", 25));
+order.addProduct(new Product("Keyboard", 75));
+
+console.log("Total price:", order.calculateTotal());
