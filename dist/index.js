@@ -185,3 +185,7 @@ order.addProduct(new Product_1.Product("Laptop", 1200));
 order.addProduct(new Product_1.Product("Mouse", 25));
 order.addProduct(new Product_1.Product("Keyboard", 75));
 console.log("Total price:", order.calculateTotal());
+// 27
+const Teacher_1 = require("./bai27/Teacher");
+const teacher = new Teacher_1.Teacher("Alice", 35, "Mathematics");
+teacher.introduce();

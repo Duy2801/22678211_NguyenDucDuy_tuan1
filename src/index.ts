@@ -249,3 +249,8 @@ order.addProduct(new Product("Mouse", 25));
 order.addProduct(new Product("Keyboard", 75));
 
 console.log("Total price:", order.calculateTotal());
+// 27
+import { Teacher } from "./bai27/Teacher";
+
+const teacher = new Teacher("Alice", 35, "Mathematics");
+teacher.introduce();
