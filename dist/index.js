@@ -106,3 +106,10 @@ const userBox = new bai16_1.Box({
 console.log("User:", userBox.getValue());
 userBox.setValue({ name: "Alice", age: 25 });
 console.log("Updated User:", userBox.getValue());
+//17
+const bai17_1 = require("./bai17");
+const logger1 = bai17_1.Logger.getInstance();
+const logger2 = bai17_1.Logger.getInstance();
+logger1.log("First message");
+logger2.log("Second message");
+console.log("Same instance?", logger1 === logger2);

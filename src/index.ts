@@ -132,3 +132,14 @@ const userBox = new Box<{ name: string; age: number }>({
 console.log("User:", userBox.getValue());
 userBox.setValue({ name: "Alice", age: 25 });
 console.log("Updated User:", userBox.getValue());
+
+//17
+import { Logger } from "./bai17";
+
+const logger1 = Logger.getInstance();
+const logger2 = Logger.getInstance();
+
+logger1.log("First message");
+logger2.log("Second message");
+
+console.log("Same instance?", logger1 === logger2);
