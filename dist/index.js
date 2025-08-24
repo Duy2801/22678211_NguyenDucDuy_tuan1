@@ -89,3 +89,20 @@ library.addUser(user1);
 library.addUser(user2);
 library.listBooks();
 library.listUsers();
+// bai 16
+const bai16_1 = require("./bai16");
+const numberBox = new bai16_1.Box(123);
+console.log("Number:", numberBox.getValue());
+numberBox.setValue(456);
+console.log("Updated Number:", numberBox.getValue());
+const stringBox = new bai16_1.Box("Hello");
+console.log("String:", stringBox.getValue());
+stringBox.setValue("World");
+console.log("Updated String:", stringBox.getValue());
+const userBox = new bai16_1.Box({
+    name: "Duy",
+    age: 21,
+});
+console.log("User:", userBox.getValue());
+userBox.setValue({ name: "Alice", age: 25 });
+console.log("Updated User:", userBox.getValue());

@@ -95,7 +95,6 @@ d.work();
 d.code();
 // bai 15
 
-
 const library = new Library();
 
 const book1 = new Book15("Clean Code", "Robert C. Martin");
@@ -112,3 +111,24 @@ library.addUser(user2);
 
 library.listBooks();
 library.listUsers();
+// bai 16
+
+import { Box } from "./bai16";
+const numberBox = new Box<number>(123);
+
+console.log("Number:", numberBox.getValue());
+numberBox.setValue(456);
+console.log("Updated Number:", numberBox.getValue());
+
+const stringBox = new Box<string>("Hello");
+console.log("String:", stringBox.getValue());
+stringBox.setValue("World");
+console.log("Updated String:", stringBox.getValue());
+
+const userBox = new Box<{ name: string; age: number }>({
+  name: "Duy",
+  age: 21,
+});
+console.log("User:", userBox.getValue());
+userBox.setValue({ name: "Alice", age: 25 });
+console.log("Updated User:", userBox.getValue());
