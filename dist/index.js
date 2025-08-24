@@ -10,6 +10,7 @@ const bai6_1 = require("./bai6");
 const bai7_1 = require("./bai7");
 const bai8_1 = require("./bai8");
 const bai9_1 = require("./bai9");
+const bai11_1 = require("./bai11");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
@@ -48,3 +49,10 @@ console.log(acc.accountNumber);
 console.log(acc.getBalance());
 acc.deposit(200);
 console.log(acc.getBalance());
+// bai 11
+const dog = new bai11_1.Dog11("Buddy");
+dog.move();
+dog.bark();
+const cat = new bai11_1.Cat11("Kitty");
+cat.move();
+cat.meow();

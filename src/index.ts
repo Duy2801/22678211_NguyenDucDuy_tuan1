@@ -8,6 +8,7 @@ import { Book } from "./bai6";
 import { User } from "./bai7";
 import { Product } from "./bai8";
 import { Animal, Dog, Cat } from "./bai9";
+import { Dog11, Cat11 } from "./bai11";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -59,3 +60,11 @@ console.log(acc.getBalance());
 
 acc.deposit(200);
 console.log(acc.getBalance());
+// bai 11
+const dog = new Dog11("Buddy");
+dog.move();
+dog.bark();
+
+const cat = new Cat11("Kitty");
+cat.move();
+cat.meow();
