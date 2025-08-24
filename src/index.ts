@@ -7,7 +7,7 @@ import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
 import { User } from "./bai7";
 import { Product } from "./bai8";
-import { Animal, Dog, Cat } from "./bai9";
+// import { Animal, Dog, Cat } from "./bai9";
 import { Dog11, Cat11 } from "./bai11";
 import { Bird, Fish } from "./bai12";
 import { Shape, Square, Circle } from "./bai13";
@@ -57,9 +57,9 @@ const expensiveProducts = products.filter((p) => p.price > 100);
 console.log("Products with price > 100:");
 expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 // bai9
-const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
+// const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 
-animals.forEach((a) => a.sound());
+// animals.forEach((a) => a.sound());
 // bai 10
 const acc = new Account("Duy", 500, "ACC123");
 console.log(acc.owner);
@@ -152,3 +152,13 @@ console.log("Add:", MathUtil.add(10, 5));
 console.log("Subtract:", MathUtil.subtract(10, 5));
 console.log("Multiply:", MathUtil.multiply(10, 5));
 console.log("Divide:", MathUtil.divide(10, 5));
+// 19
+import { Animal, Dog, Cat } from "./bai19";
+
+const animals: Animal[] = [
+  new Dog("Buddy"),
+  new Cat("Kitty"),
+  new Animal("GenericAnimal"),
+];
+
+animals.forEach((a) => a.makeSound());

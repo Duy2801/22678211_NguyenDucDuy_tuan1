@@ -9,7 +9,7 @@ const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
 const bai7_1 = require("./bai7");
 const bai8_1 = require("./bai8");
-const bai9_1 = require("./bai9");
+// import { Animal, Dog, Cat } from "./bai9";
 const bai11_1 = require("./bai11");
 const bai12_1 = require("./bai12");
 const bai13_1 = require("./bai13");
@@ -47,8 +47,8 @@ const expensiveProducts = products.filter((p) => p.price > 100);
 console.log("Products with price > 100:");
 expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
 // bai9
-const animals = [new bai9_1.Dog("Buddy"), new bai9_1.Cat("Kitty")];
-animals.forEach((a) => a.sound());
+// const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
+// animals.forEach((a) => a.sound());
 // bai 10
 const acc = new bai10_1.Account("Duy", 500, "ACC123");
 console.log(acc.owner);
@@ -119,3 +119,11 @@ console.log("Add:", bai18_1.MathUtil.add(10, 5));
 console.log("Subtract:", bai18_1.MathUtil.subtract(10, 5));
 console.log("Multiply:", bai18_1.MathUtil.multiply(10, 5));
 console.log("Divide:", bai18_1.MathUtil.divide(10, 5));
+// 19
+const bai19_1 = require("./bai19");
+const animals = [
+    new bai19_1.Dog("Buddy"),
+    new bai19_1.Cat("Kitty"),
+    new bai19_1.Animal("GenericAnimal"),
+];
+animals.forEach((a) => a.makeSound());
