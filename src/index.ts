@@ -6,6 +6,7 @@ import { BankAccount } from "./bai5";
 import { Book } from "./bai6";
 import { User } from "./bai7";
 import { Product } from "./bai8";
+import { Animal, Dog, Cat } from "./bai9";
 var person = new Person("Duy", 22);
 person.displayInfo();
 
@@ -45,3 +46,7 @@ const expensiveProducts = products.filter((p) => p.price > 100);
 
 console.log("Products with price > 100:");
 expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
+// bai9
+const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
+
+animals.forEach((a) => a.sound());

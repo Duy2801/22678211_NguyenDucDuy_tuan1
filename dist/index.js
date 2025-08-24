@@ -8,6 +8,7 @@ const bai5_1 = require("./bai5");
 const bai6_1 = require("./bai6");
 const bai7_1 = require("./bai7");
 const bai8_1 = require("./bai8");
+const bai9_1 = require("./bai9");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
 const student1 = new bai2_1.Student("Duy", 22, "A");
@@ -36,3 +37,6 @@ const products = [
 const expensiveProducts = products.filter((p) => p.price > 100);
 console.log("Products with price > 100:");
 expensiveProducts.forEach((p) => console.log(`${p.name} - $${p.price}`));
+// bai9
+const animals = [new bai9_1.Dog("Buddy"), new bai9_1.Cat("Kitty")];
+animals.forEach((a) => a.sound());
