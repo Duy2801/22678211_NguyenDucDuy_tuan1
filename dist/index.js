@@ -17,6 +17,8 @@ const bai14_1 = require("./bai14");
 const Book_1 = require("./bai15/Book");
 const User_1 = require("./bai15/User");
 const Library_1 = require("./bai15/Library");
+const CashPayment_1 = require("./bai23/CashPayment");
+const CardPayment_1 = require("./bai23/CardPayment");
 const bai18_1 = require("./bai18");
 var person = new bai1_1.Person("Duy", 22);
 person.displayInfo();
@@ -160,3 +162,9 @@ console.log("Peek:", stack.peek());
 console.log("Pop:", stack.pop());
 console.log("Peek:", stack.peek());
 console.log("Is empty?", stack.isEmpty());
+// 23
+const payments = [
+    new CashPayment_1.CashPayment(),
+    new CardPayment_1.CardPayment("1234-5678-9012-3456"),
+];
+payments.forEach((p) => p.pay(100));

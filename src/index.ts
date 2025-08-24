@@ -15,6 +15,9 @@ import { Manager, Developer } from "./bai14";
 import { Book15 } from "./bai15/Book";
 import { User15 } from "./bai15/User";
 import { Library } from "./bai15/Library";
+import { CashPayment } from "./bai23/CashPayment";
+import { CardPayment } from "./bai23/CardPayment";
+import { Payment } from "./bai23/Payment";
 
 import { MathUtil } from "./bai18";
 var person = new Person("Duy", 22);
@@ -202,16 +205,22 @@ import { Stack } from "./bai22";
 
 const stack = new Stack<number>();
 
-console.log("Is empty?", stack.isEmpty()); 
+console.log("Is empty?", stack.isEmpty());
 
 stack.push(10);
 stack.push(20);
 stack.push(30);
 
-console.log("Peek:", stack.peek()); 
+console.log("Peek:", stack.peek());
 
-console.log("Pop:", stack.pop());   
-console.log("Peek:", stack.peek()); 
+console.log("Pop:", stack.pop());
+console.log("Peek:", stack.peek());
 
-console.log("Is empty?", stack.isEmpty()); 
+console.log("Is empty?", stack.isEmpty());
+// 23
+const payments: Payment[] = [
+  new CashPayment(),
+  new CardPayment("1234-5678-9012-3456"),
+];
 
+payments.forEach((p) => p.pay(100));
